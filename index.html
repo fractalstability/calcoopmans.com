@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cal Coopmans</title>
+  <style>
+    :root {
+      --green-dark:   #1a3a2a;
+      --green-mid:    #2d6a4f;
+      --green-light:  #52b788;
+      --green-pale:   #d8f3dc;
+      --cream:        #f8faf8;
+      --text-dark:    #1a2e1f;
+      --text-muted:   #4a6658;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Georgia", serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: white;
+      border-top: 5px solid var(--green-mid);
+      border-radius: 4px;
+      box-shadow: 0 2px 20px rgba(45, 106, 79, 0.10);
+      max-width: 560px;
+      width: 100%;
+      padding: 3rem 2.5rem 2.5rem;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: 0.01em;
+      color: var(--green-dark);
+      margin-bottom: 0.25rem;
+    }
+
+    .title {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--green-pale);
+      margin-bottom: 2rem;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: var(--text-dark);
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      border: 1px solid var(--green-pale);
+      background: var(--cream);
+      transition: background 0.18s, border-color 0.18s, color 0.18s;
+    }
+
+    .link-item:hover {
+      background: var(--green-pale);
+      border-color: var(--green-light);
+      color: var(--green-dark);
+    }
+
+    .link-icon {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--green-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .link-icon svg {
+      width: 1rem;
+      height: 1rem;
+      fill: white;
+    }
+
+    .link-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link-label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .link-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-top: 0.1rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <h1 class="name">Dr. Cal Coopmans</h1>
+  <p class="title">Research Professor · Director, AggieAir · Utah State University<br>Drones · Robotics · Electronics · Remote Sensing</p>
+
+  <hr class="divider" />
+
+  <div class="links">
+
+    <!-- USU Faculty -->
+    <a class="link-item" href="https://engineering.usu.edu/ece/people/faculty/coopmans-calvin" target="_blank" rel="noopener">
+      <div class="link-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 12.5L3.5 11 12 6.5l8.5 4.5L12 15.5zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+      </div>
+      <div class="link-text">
+        <span class="link-label">USU ECE Faculty Page</span>
+        <span class="link-sub">Utah State University · Electrical &amp; Computer Engineering</span>
+      </div>
+    </a>
+
+    <!-- AggieAir -->
+    <a class="link-item" href="https://uwrl.usu.edu/aggieair/" target="_blank" rel="noopener">
+      <div class="link-icon">
+        <!-- drone / propeller icon -->
+        <svg viewBox="0 0 24 24"><path d="M21 6c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm-14 0C7 4.9 6.1 4 5 4S3 4.9 3 6s.9 2 2 2 2-.9 2-2zm7 6c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zm-1-4c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 9.5 12 9.5s2.5 1.12 2.5 2.5S13.38 14.5 12 14.5zm-7 3.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+      </div>
+      <div class="link-text">
+        <span class="link-label">AggieAir</span>
+        <span class="link-sub">Utah Water Research Lab · Small UAS Remote Sensing</span>
+      </div>
+    </a>
+
+    <!-- ResearchGate -->
+    <a class="link-item" href="https://www.researchgate.net/profile/Calvin-Coopmans" target="_blank" rel="noopener">
+      <div class="link-icon">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+      </div>
+      <div class="link-text">
+        <span class="link-label">ResearchGate</span>
+        <span class="link-sub">Publications &amp; research profile</span>
+      </div>
+    </a>
+
+    <!-- Google Scholar -->
+    <a class="link-item" href="https://scholar.google.com/citations?user=Q4hNAqIAAAAJ" target="_blank" rel="noopener">
+      <div class="link-icon">
+        <svg viewBox="0 0 24 24"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+      </div>
+      <div class="link-text">
+        <span class="link-label">Google Scholar</span>
+        <span class="link-sub">90+ publications · 1,100+ citations</span>
+      </div>
+    </a>
+
+    <!-- ORCID -->
+    <a class="link-item" href="https://orcid.org/0000-0002-9421-3829" target="_blank" rel="noopener">
+      <div class="link-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947-.946-.431-.946-.947.421-.947.946-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 3.872-2.484 3.872-3.722 0-2.016-1.066-3.722-3.984-3.722h-2.185z"/></svg>
+      </div>
+      <div class="link-text">
+        <span class="link-label">ORCID</span>
+        <span class="link-sub">0000-0002-9421-3829</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer>calcoopmans.com</footer>
+
+</body>
+</html>
